@@ -42,17 +42,6 @@
         transform: translate(-50%, 0px)
     }
 
-    #anim{
-        height: 300px;
-        width: 960px;
-        border: 2px solid red;
-        margin: 0;
-        position: absolute;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, 0px)
-    }
-
    .center {
        background-image: linear-gradient(to right, black ,#554477,black);
        width: 100%;
@@ -77,12 +66,10 @@
         margin: -50px -20px;
         border: none;
         box-sizing: border-box;
-        transform: rotate(-2deg);
    }
 
    .headcontent {
        padding:50px 20px;
-        transform: rotate(2deg);
    }
 
 
@@ -154,6 +141,26 @@
    
    
    @media screen and (max-width: 960px){
+    .head {
+        background-image: linear-gradient(to right, black ,#334488,black);
+        width: 120%;
+        height: 350px;
+        margin: -50px -20px;
+        border: none;
+        box-sizing: border-box;
+   }
+
+    #myCanvas{
+        height: 200px;
+        width: 100%;
+        border: 0px solid red;
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, 0px)
+    }
+
     .col {
         display: block;
     }
