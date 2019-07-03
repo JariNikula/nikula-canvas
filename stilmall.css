@@ -107,7 +107,7 @@
     }
    .col {
         display: table-cell;
-        padding: 16px;
+        padding: 0px;
         padding-top: 10px;
     }
     .col1 {
