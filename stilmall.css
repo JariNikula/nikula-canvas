@@ -153,8 +153,39 @@
 }
    
    
-   @media screen and (max-width: 590px){
-   
+   @media screen and (max-width: 960px){
+    .col {
+        display: block;
+    }
+    .col1 {
+        display: block;
+        padding: 16px;
+        padding-top: 100px;
+        width: 100%;
+        background-image: url("col1bg.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .col2 {
+        display: block;
+        padding: 16px;
+        padding-top: 100px;
+        width: 100%;
+        background-image: linear-gradient(to right, black ,green, black);
+    }
+    .col3 {
+        display: block;
+        padding: 16px;
+        padding-top: 100px;
+        width: 100%;
+    }
+    div.col1 p, div.col2 p, div.col3 p {
+        margin: 0px;
+        padding-left: 50px;
+        line-height: 1;
+    }
    }
    
    
