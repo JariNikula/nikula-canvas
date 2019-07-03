@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stilmall.css" type="text/css" media="screen, print" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nikula</title>
+                    
+    </head>
+
+    <body>
+
+    <div class="head">
+        <div class="headcontent"><p>NIKULA</p><canvas id="myCanvas" width="960" height="300"></canvas></div>
+    </div>   
+
+    <div class="col-container">
+            <div class="col1">
+              <h2>Javascript Art</h2>
+              <h3>dwitter.net</h3>
+              <p>Visit my creations at: <a href=https://www.dwitter.net/u/New_Core>https://www.dwitter.net/u/New_Core</a> </p>
+              
+              <h3>wab.com</h3>
+              <p>Visit my creations at: <a href=https://www.wab.com>https://www.wab.com</a><br>Click on NewCore for my stuff.</p>
+              
+
+            </div>
+          
+            <div class="col2">
+              <h2>Javascript Canvas Service</h2>
+              <h3>Freelancer</h3>
+              <p>Offering to program Javascript banners, advertise and other HTML5 Canvas animations.</p>
+            </div>
+          
+            <div class="col3" style="background:rgb(54, 54, 92)">
+              <h2>Unique item Store</h2>
+              <p>Up and coming store with unique items for sale.</p>
+              <p></p>
+              <h3>T-shirt</h3>
+              <p>T-shirts with unique painted motives.</p>
+              <h3>Guitar</h3>
+              <p>Limited Custom Guitars</p>
+            </div>
+          </div>
+
+    <div class="foot"><br><p> Website programmed and designed by Jari Nikula 2019</p></div>   
+
+    </body> 
+
+    <script>        
+        window.requestAnimFrame = (function(){
+        return  window.requestAnimationFrame       || 
+            window.webkitRequestAnimationFrame || 
+            window.mozRequestAnimationFrame    || 
+            window.oRequestAnimationFrame      || 
+            window.msRequestAnimationFrame     || 
+            function(/* function */ callback, /* DOMElement */ element){
+              window.setTimeout(callback, 1000 / 60);
+            };
+        })();
+
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        var t=0;
+        go();
+
+        function go(){
+            t+=0.01;
+            for(i=500;i--;ctx.fillRect(450+200*Math.sin(i)*Z,150+i*Math.cos(i)*Z,a=i/2*Z,a))Z=2**Math.tan(i*8+t),ctx.fillStyle=`hsla(${i/2+t*9},99%,50%,.01)`
+            ctx.fillStyle="#0092"
+            for(i=4;i--;ctx.fillText("JAVASCRIPT|NIKULA|ART|CANVAS".split('|')[0|i],450,150+Z*12))Z=5**Math.tan(i*.8+t/3),ctx.textAlign="center",ctx.font=Z+"cm '"
+            requestAnimFrame( go );
+        }
+</script>  
+
+</html>

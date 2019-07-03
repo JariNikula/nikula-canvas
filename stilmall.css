@@ -1,0 +1,191 @@
+@font-face
+ {
+ font-family: myNikulaFont;
+ src: url('nikula.ttf'),
+      url('nikula.eot'); /* IE9+ */
+ }
+
+@media screen {
+
+    h1,h2 { clear: left; font-family: "Times New Roman", Times, serif; font-weight: 100; margin: 0px; padding-left:35px; margin-right: 10px; margin-bottom: 10px; color:rgb(255, 255, 255);}
+    h3,h4,h5,h6 { clear: left; font-family: "Times New Roman", Times, serif; font-weight: 100; margin: 0px; padding-left:35px; margin-right: 10px; color:white;}
+
+    p {clear: left;font-family: "Arial",Arial, sans-serif; font-size: 18px; padding-top:10px;padding-left: 10px;line-height: 0.8;position: relative; top:-8px; color:rgb(171, 167, 187);}
+    p.small {font-size: 12px;}
+    br {padding-top:10px;}
+
+    a:link, a:visited {
+        color: rgb(162, 223, 231);
+        font-family: Verdana ,sans-serif;
+        font-size: 12px;
+      }
+      
+    a:hover, a:active {
+        color: rgb(162, 231, 177);
+        font-family: Verdana ,sans-serif;
+        font-size: 12px;
+    }
+
+    html, body {
+        height: 100%;
+        margin: 0;
+      } 
+      
+    #myCanvas{
+        height: 300px;
+        width: 100%;
+        border: 0px solid red;
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, 0px)
+    }
+
+    #anim{
+        height: 300px;
+        width: 960px;
+        border: 2px solid red;
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, 0px)
+    }
+
+   .center {
+       background-image: linear-gradient(to right, black ,#554477,black);
+       width: 100%;
+       height: 400px;
+       margin: 0px;
+       padding: 0px;
+   }
+   
+   .content {
+        clear: left;
+        margin: auto;
+        width: 100%;
+        border: 0px solid blue;
+        padding-top: 20px;
+        margin-left: 10px;
+   }
+
+   .head {
+        background-image: linear-gradient(to right, black ,#334488,black);
+        width: 120%;
+        height: 450px;
+        margin: -50px -20px;
+        border: none;
+        box-sizing: border-box;
+        transform: rotate(-2deg);
+   }
+
+   .headcontent {
+       padding:50px 20px;
+        transform: rotate(2deg);
+   }
+
+
+   div.headcontent p {
+        font-family:myNikulaFont;
+        font-size: 50px;
+        margin:0px 40px;
+        font-weight:bold;
+        color:whitesmoke;
+    }
+
+   .foot {
+        background-image: linear-gradient(to right, black ,#334488,black);
+        height: 250px;
+        font-family: "Arial",Arial, sans-serif;
+        font-size: 10px;
+        clear: left;
+        margin: auto;
+        width: 100%;
+        border: none;
+   }
+   div.foot p {
+        margin: 0px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+   .col-container {
+        display: table;
+        width: 100%;
+        height:500px;
+    }
+   .col {
+        display: table-cell;
+        padding: 16px;
+        padding-top: 100px;
+    }
+    .col1 {
+        display: table-cell;
+        padding: 16px;
+        padding-top: 100px;
+        width: 33%;
+        background-image: url("col1bg.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .col2 {
+        display: table-cell;
+        padding: 16px;
+        padding-top: 100px;
+        width: 33%;
+        background-image: linear-gradient(to right, black ,green, black);
+    }
+    .col3 {
+        display: table-cell;
+        padding: 16px;
+        padding-top: 100px;
+        width: 33%;
+    }
+    div.col1 p, div.col2 p, div.col3 p {
+        margin: 0px;
+        padding-left: 50px;
+        line-height: 1;
+    }
+
+}
+   
+   
+   @media screen and (max-width: 590px){
+   
+   }
+   
+   
+   @media print {
+    h1,h2,h3,h4,h5,h6 { clear: left; font-family: "Times New Roman", Times, serif; font-weight: 100; margin: 0px; padding-left:35px; margin-right: 10px; background-color: #555555;!important; -webkit-print-color-adjust: exact; color:white;}
+    p {clear: left;font-family: "Arial",Arial, sans-serif; font-size: 18px; padding-top:10px;padding-left: 10px;line-height: 0.8;position: relative; top:-8px;}
+    p.small {font-size: 12px;}
+    
+   .center {
+       margin: auto;
+       width: 950px;
+       border: 0px solid grey;
+       padding: 10px;
+   }
+   
+   .content {
+       clear: left;
+           margin: auto;
+           width: 100%;
+           border: 0px solid blue;
+           padding-top: 20px;
+           margin-left: 10px;
+   }
+   
+   .foot {
+       font-family: "Arial",Arial, sans-serif;
+           font-size: 10px;
+       clear: left;
+           margin: auto;
+           width: 100%;
+           border: 0px solid red;
+   }
+     
+}
