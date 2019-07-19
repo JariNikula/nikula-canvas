@@ -18,6 +18,7 @@
               <h2>Javascript Art</h2>
               <h3>dwitter.net</h3>
               <p>Visit my creations at: <a href=https://www.dwitter.net/u/New_Core>https://www.dwitter.net/u/New_Core</a> </p>
+              <p><img src="dwitt2.jpg"><img src="dwitt3.jpg"></p>
               
               <h3>wab.com</h3>
               <p>Visit my creations at: <a href=https://www.wab.com>https://www.wab.com</a><br>Click on NewCore for my stuff.</p>
@@ -31,14 +32,11 @@
               <p>Offering to program Javascript banners, advertise and other HTML5 Canvas animations.</p>
             </div>
           
-            <div class="col3" style="background:rgb(54, 54, 92)">
-              <h2>Unique item Store</h2>
-              <p>Up and coming store with unique items for sale.</p>
-              <p></p>
-              <h3>T-shirt</h3>
-              <p>T-shirts with unique painted motives.</p>
-              <h3>Guitar</h3>
-              <p>Limited Custom Guitars</p>
+            <div class="col3">
+              <h2>Gaming</h2>
+              <h3>Entropiauniverse</h3>
+              <p>Avatarname: Side Slay Show</p>
+              <p><img src="game.jpg"></p>
             </div>
           </div>
 
@@ -65,9 +63,9 @@
 
         function go(){
             t+=0.01;
-            for(i=500;i--;ctx.fillRect(450+200*Math.sin(i)*Z,150+i*Math.cos(i)*Z,a=i/2*Z,a))Z=2**Math.tan(i*8+t),ctx.fillStyle=`hsla(${i/2+t*9},99%,50%,.01)`
+            for(i=400;i--;ctx.fillRect(450+200*Math.sin(i)*Z,150+i*Math.cos(i)*Z,a=i/2*Z,a))Z=2**Math.tan(i*8+t),ctx.fillStyle=`hsla(${i/2+t*9},99%,50%,.01)`
             ctx.fillStyle="#0092"
-            for(i=4;i--;ctx.fillText("JAVASCRIPT|NIKULA|ART|CANVAS".split('|')[0|i],450,150+Z*12))Z=5**Math.tan(i*.8+t/3),ctx.textAlign="center",ctx.font=Z+"cm '"
+            for(i=4;i--;ctx.fillText("JAVASCRIPT|NIKULA|ART|CANVAS".split('|')[0|i],450,150+Z*12))Z=5**Math.tan(i*.8+t/3),ctx.textAlign="center",ctx.font=Z+"cm Times"
             requestAnimFrame( go );
         }
 </script>  
